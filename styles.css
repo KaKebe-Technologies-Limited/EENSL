@@ -1,0 +1,233 @@
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .4rem;
+}
+
+.photos img{
+    width: 360px;
+    height: 280px;
+   
+
+}
+.list-safe li{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.safety-program{
+    background-color: rgba(245,130,32,0.1);
+    height: 40px;
+    padding: 30px;
+    text-align: left;
+    align-items: center;
+}
+.safety-program h5{
+    padding-bottom: 10px;
+}
+.hr-line{
+    height: 2px;
+    background-color:  rgba(241, 117, 7, 0.1);
+}
+
+/* Painting */
+.div-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .4rem;
+}
+
+.div-sec img{
+    width: 360px;
+    height: 280px;
+
+}
+
+@media screen and (max-width:600px) {
+    .div-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: .4rem;
+    }
+    .div-sec-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .div-section-painting{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: .4rem;
+    }
+    
+}
+
+.div-section-painting{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .8rem;
+    /* border-style: groove; */
+    padding: 20px;
+}
+.div-section-painting div{
+    /* background-color: black; */
+    width: auto;
+
+}
+.div-section-painting div li{
+    /* background-color: black; */
+    list-style-type: disc;
+    margin-left: 20px;
+    
+}
+@media screen and (max-width:600px) {
+   
+    .div-section-painting{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: .4rem;
+    }
+    
+}
+
+.div-sec-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+@media screen and (max-width:600px) {
+   
+    .div-section-painting{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    
+}
+
+/* about us section editing */
+.about-us-section{
+    padding: 40PX;
+}
+
+@media screen and (max-width:600px) {
+   
+    .about-us-section{
+        padding: 10PX;
+    }
+    
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    padding: 60px;
+}
+.card-sedu{
+    width: 350px !important;
+}
+
+@media screen and (max-width:600px) {
+   
+    .main-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1em;
+        padding: 10px;
+    }
+    
+}
+
+/***********************************************/
+/***************** Accordion ********************/
+/***********************************************/
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section{
+	padding: 60px 0;
+}
+
+#accordion-style-1 h1,
+#accordion-style-1 a{
+    color:#007b5e;
+}
+#accordion-style-1 .btn-link {
+    font-weight: 400;
+    color: #007b5e;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+	padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+    border-top: 2px solid #007b5e;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main{
+	display:none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main{
+	background: #007b5e;
+    padding: 13px 11px;
+    color: #ffffff;
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+	display:block;
+}
+
+.home-font{
+    font-size: 60px !important;
+}
+
+@media screen and (max-width:600px) {
+   
+    .home-font{
+        font-size: 23px !important;
+    }
+    
+}
+
+
+.main-info-div{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    align-items: center;
+    margin: 30px;
+    place-content: center;
+}
+.about-info{
+    width: auto;
+    
+}
+.center-text{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.core-values{
+    text-align: justify;
+}
+
+.core-values h4{
+    font-size: 20px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+/* product session */
+.center .filter-button{
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
