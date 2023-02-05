@@ -5,10 +5,14 @@
 }
 
 /* whatsapp icon */
-.whatsappbtn{
+.whatsappbtn {
     background-color: green !important;
     color: white;
     border: none;
+}
+
+.whatsappbtn a {
+    position: fixed; bottom: 20px; z-index: 999; right: 20px;
 }
 .photos img{
     width: 360px;
