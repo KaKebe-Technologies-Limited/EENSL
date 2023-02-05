@@ -4,6 +4,12 @@
     gap: .4rem;
 }
 
+/* whatsapp icon */
+.whatsappbtn{
+    background-color: green !important;
+    color: white;
+    border: none;
+}
 .photos img{
     width: 360px;
     height: 280px;
