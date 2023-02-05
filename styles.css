@@ -12,6 +12,7 @@
 }
 
 .whatsappbtn a {
+    background-color: green !important;
     position: fixed; bottom: 20px; z-index: 999; right: 20px;
 }
 .photos img{
