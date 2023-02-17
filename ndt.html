@@ -25,11 +25,40 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
-<!-- accordion -->
+
+            <!-- accordion css -->
+            <style>
+                /* Style the accordion cards */
+                .card {
+                margin-bottom: 10px;
+                }
+
+                /* Style the accordion header button */
+                .card-header button {
+                font-weight: bold;
+                color: #333;
+                }
+
+                /* Style the accordion body */
+                .card-body {
+                background-color: #f5f5f5;
+                padding: 10px;
+                }
+
+            </style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+<!-- Bootstrap JS (with jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha"></script>
    </head>
 
    <body>
@@ -171,29 +200,22 @@
 
             </div>
         </div>
-        <!-- Accordion -->
-<div class="container-fluid bg-gray" id="accordion-style-1">
-	<div class="container">
-		<section>
-			<div class="row">
-				<div class="col-12">
-					<h1 class="text-green mb-4 text-center">Our Methods</h1>
-				</div>
-				<div class="col-10 mx-auto">
-					<div class="accordion" id="accordionExample">
-                        <!-- model -->
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-							<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							  <i class="fa fa-amazon main"></i><i class="fa fa-angle-double-right mr-3"></i>API 653 Tank inspection - In tank Robotic Tank Inspection
-							</button>
-						  </h5>
-							</div>
 
-							<div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
-                                    <p><b>Measure the savings by adding up the true costs of conventional out-of-service inspection.</b></p><p>
+     <div class="container">
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    API 653 Tank inspection - <br>In tank Robotic Tank Inspection
+                  </button>
+                </h5>
+              </div>
+          
+              <!-- show is the class for defalut viewing of expan -->
+              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p><b>Measure the savings by adding up the true costs of conventional out-of-service inspection.</b></p><p>
                                         The total cost of conventional inspections are far greater than the expense of cleaning and MFE inspection. The cost of material transfer, product downgrades and tank downtime are enormous. </p><p>
                                         The hidden cost of premature repairs can be just as high. When the tank is empty, you will ll have to complete all repairs quickly. This usually means paying a premium for service and completing repairs that are not necessary for another five to 10 years. Now you can reduce costs by completing an API 653 inspection of your AST (Above- Ground Storage Tank) without taking the tank down for manual cleaning and inspection</p><p>RTI can scan the floor of a full tank while in- service and provide you with a quantitative assessment of tank floor integrity all with greater reliability and</p><p><ul><li>Eliminate the high cost of taking down your tanks</li><li>
                                          Complete an API 653 inspection in days instead of weeks or months</li><li>Avoid disruptions in normal service and keep revenue consistent</li><li>Perform repairs only as needed</li><li>Minimize impact to your costs and operations</li><li>Reduce environmental and safety risks</li></ul></p>
@@ -201,57 +223,118 @@
                                         High-density UT scanning reveals more about the true condition of your tank. The full Service tank inspection provides a complete, 10-year API 653 report on the condition of your tank. </p><p>
                                         <b>Your report includes:</b></p><p> <ul><li>Top-side and bottom-side corrosion locations</li><li>Floor-plate thickness and pitting</li><li>Videotape of roof underside and vapor space structures</li></ul></p><p>
                                         The tank inspection report also gives you a recommended timetable for future repairs. This powerful tool enables you to manage costs and cash flow by scheduling out-of-service cleaning and  repairs efficiently</p><p><b>High-Density UT Scanning Reveals More About the True Condition of Your Tank</b></p><p>The RTI service systematically scans the tank floor and collects a high volume of UT data for analysis. Unlike traditional inspection technologies, the RTI scanning system is not affected by tank coatings, including fiberglass. Incoming data streams pinpoint areas of corrosion and quantify the remaining plate thickness. </p><p>Verification Studies prove that this is the API 653 inspection you can rely on. </p><p>In study after study, the RTI system was tested side by side against the traditional out-of-service method. Tanks were first tested robotically while in operation, and then drained, cleaned and inspected conventionally. These results consistently confirmed that the RTI evaluation yielded an estimate of remaining useful floor life that was identical to an out- of-service inspection. </p>.
-								</div>
-							</div>
-						</div>
+                </div>
+              </div>
+            </div>
+        
 
-                        <!-- end of model  -->                    
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Intelligent pigging
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <img class="img-fluid" src="assets/img/intelligent-pigging.jpg"></div><div class="accordion-text col-md-12 p-4 align-middle position-relative">Intelligent pigging is a technique of inspection of pipelines using digital technology to understand their condition. It is widely used to gather important data, such as the presence and location of corrosion or other irregularities on the inner walls of the pipe.
+                </div>
+              </div>
+            </div>
 
-						<div class="card">
-							<div class="card-header" id="headingThree">
-								<h5 class="mb-0">
-							<button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							  <i class="fa fa-expeditedssl main"></i><i class="fa fa-angle-double-right mr-3"></i>Intelligent pigging
-							</button>
-						  </h5>
-							</div>
-							<div id="collapseThree" class="collapse fade" aria-labelledby="headingThree" data-parent="#accordionExample">
-								<div class="card-body">
-									<img class="img-fluid" src="assets/img/intelligent-pigging.jpg"></div><div class="accordion-text col-md-12 p-4 align-middle position-relative">Intelligent pigging is a technique of inspection of pipelines using digital technology to understand their condition. It is widely used to gather important data, such as the presence and location of corrosion or other irregularities on the inner walls of the pipe.
-								</div>
-							</div>
-						</div>
 
-                        <!-- end of card -->
+          <!-- card start -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Liquid Penetrant Inspection
+                  </button>
+                </h5>
+              </div>
+        
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <img class="img-fluid" src="images/liquid-penetrant-inspection.jpg"></div><div class="accordion-text col-md-9 p-4 align-middle position-relative">Surface-breaking flaws such as cracks, laps, porosity, etc. To be detected, the flaw must reach the surface to be tested.
+                </div>
+              </div>
+            </div>
 
-                        <!-- model -->
-						<div class="card">
-							<div class="card-header" id="headingFour">
-								<h5 class="mb-0">
-							<button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-							  <i class="fa fa-envelope main"></i><i class="fa fa-angle-double-right mr-3"></i>Liquid Penetrant Inspection
-							</button>
-						  </h5>
-							</div>
-							<div id="collapseFour" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
-								<div class="card-body">
-									<img class="img-fluid" src="images/liquid-penetrant-inspection.jpg"></div><div class="accordion-text col-md-9 p-4 align-middle position-relative">Surface-breaking flaws such as cracks, laps, porosity, etc. To be detected, the flaw must reach the surface to be tested.
-								</div>
-							</div>
-						</div>
-                         <!-- end of model -->
+        <!-- card end -->
 
-                         
-
-                         
-					</div>
-				</div>	
-			</div>
-		</section>
-	</div>
-</div>
+         <!-- card start -->
+         <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    NDT INSPECTION SERVICE
+                </button>
+              </h5>
+            </div>
       
-        <!-- Services Details End -->
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <p>Non-destructive testing is a testing and analysis technique used by industries to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p>
+                
+                <p> EENSL has been extensively involved in a number of projects for non-destructive testing. We have both the capacity to test and certify new and existing structures both efficiently and safely. We offer specialized non-destructive examination services for a wide range</p>
+               
+                
+              </div>
+            </div>
+          </div>
+
+      <!-- card end -->
+
+       <!-- card start -->
+       <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                ULTRASONIC TESTING.
+            </button>
+          </h5>
+        </div>
+  
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            <p>Ultrasonic Inspection (UT) uses ultrasonic waves to measure internal defects in a variety of materials. It can be used on most materials. 
+            UT can be used to detect corrosion, thinning, and internal planar defects. It also identifies cracks and voids and is useful for testing pressure vessels, storage tanks, and welds in high-pressure environments. The method is also useful for inspecting forgings, castings, and structural steel welds.
+                </p>
+            
+            <p> It can be used to gauge thickness through surface paint. It can penetrate deep into materials and gives instant results, allowing for a fast report turnaround.
+                UT only detects faults within a material, and as such is often combined with surface inspection tests such as Magnetic particle inspection. When inspecting welds, a minimum material thickness may be required. Also, surface dirt can impact the quality of the result, as can irregular-shaped components, so the method is not suitable for every asset. In addition, the single direction of the probe’s beam means the probe must be moved manually to cover all of the components.
+                Application
+
+                <ul style="list-style-type: disc;">
+                    <li> •	For storage tanks and pressure vessels.</li>
+                    <li>• For pipework</li>
+                    <li>• For pipework.</li>
+                    <li> •	For structural steel.</li>
+                    <li> •	For welds, welds in structural steel and in high pressure environment</li>
+                    <li> •	For forgings and castings.</li>
+                    <li>  •	For shafts.</li>
+                    <li>   •	For heat exchangers and boilers.</li>
+
+                </ul>
+                </p>
+           
+            
+          </div>
+        </div>
+      </div>
+
+  <!-- card end -->
+
+        
+          </div>
+          
+     </div>   
+
+  
+      
+     
 
        
     </main>
