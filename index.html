@@ -8,7 +8,7 @@
          <meta property="og:url" content="https://eensl.com">
          <meta property="og:image" content="assets/img/hero/1r.png">
 
-         
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Emex Engineering NDT Service </title> 
@@ -23,6 +23,9 @@
         <meta name="author" content="Sedrick Otolo">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
         <link rel="manifest" href="site.webmanifest">
@@ -40,6 +43,29 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
+
+            <style>
+                .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+            </style>
    </head>
 
    <body>
@@ -136,10 +162,25 @@
     </header>
     <main>
 
-        
+       
+
         <!-- slider Area Start-->
         <div class="slider-area ">
             <div class="slider-active">
+                 <!-- swipper js  -->
+        <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/th-welding.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/th-painting.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/th-about.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ndt/image004.jpg" alt=""></div>
+            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
                 <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg">
                     <div class="container">
                         <div class="row">
@@ -549,6 +590,29 @@ EENSL is majorly involved in all types of Industrial Training which is essential
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
+
+         <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
         
     </body>
 </html>
